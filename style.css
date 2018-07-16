@@ -2,10 +2,12 @@ html {
     position: relative;
     min-height: 100%;
 }
+
 body {
     /* Margin bottom by footer height */
     margin-bottom: 60px;
 }
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -20,4 +22,9 @@ body {
     width: 20px;
     height: 20px;
     margin: 0 10px;
+}
+
+.pre-nav > a {
+    border: none;
+    text-align: right
 }
