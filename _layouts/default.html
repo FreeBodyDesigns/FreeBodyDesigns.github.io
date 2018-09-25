@@ -45,14 +45,28 @@
       <div class="container">
 	<a class="navbar-brand">Free Body Designs</a>
 	<div class="collapse navbar-collapse" id="navbarLinks">
-	  <div class="navbar-nav">
-	    <a class="nav-item nav-link" id="nav-about" href="/">About</a>
-	    <a class="nav-item nav-link" id="nav-shop" href="https://www.etsy.com/shop/FreeBodyDesigns">Shop</a>
-	    <!-- <a class="nav-item nav-link" id="nav-ballroom" href="#">Ballroom</a> -->
+	  <ul class="navbar-nav">
+	    <li class="nav-item">
+	      <a class="nav-item nav-link" id="nav-about" href="/">About</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-item nav-link" id="nav-shop" href="https://www.etsy.com/shop/FreeBodyDesigns">Shop</a>
+	    </li>
+	    <li class="nav-item dropdown" id="nav-dance">
+	      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Ballroom
+	      </a>
+	      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		<a class="dropdown-item" href="/custom-costumes">Custom Costumes</a>
+		<a class="dropdown-item" href="/practicewear">Practicewear</a>
+	      </div>
+	    </li>
 	    <!-- <a class="nav-item nav-link" id="nav-blog" href="#">Blog</a> -->
-	    <a class="nav-item nav-link" id="nav-contact" href="/contact">Contact</a>
+	    <li class="nav-item">
+	      <a class="nav-item nav-link" id="nav-contact" href="/contact">Contact</a>
+	    </li>
 	    <!-- <a class="nav-item nav-link" id="nav-policy" href="#">Policy</a> -->
-	  </div>
+	  </ul>
 	</div>
 	<div>
 	  <span class="navbar-text text-right">
@@ -83,6 +97,7 @@
     var pageUrl = "{{ page.url }}";
     pageUrl = pageUrl.replace(/^\/+|\/+$/g, "");
     if (pageUrl.length === 0) pageUrl = "about";
+    if (pageUrl === "practicewear" || pageUrl === "custom-costumes") pageUrl = "dance";
     console.log($("#nav-" + pageUrl));
     $("#nav-" + pageUrl).addClass("active");
   </script>
