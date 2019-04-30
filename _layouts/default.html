@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Free Body Designs</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}Free Body Designs{% endif %}</title>
     <meta name="author" content="Eric Lam" />
     <meta name="description" content="Swim, dance, and athleisure for all bodies" />
     <meta name="keywords" content="athleisure" />
@@ -60,6 +60,9 @@
 		<!-- <a class="dropdown-item" href="/dance">Ballroom Dancewear</a> -->
 		<a class="dropdown-item" href="/custom-costumes">Custom Costumes</a>
 		<a class="dropdown-item" href="/practicewear">Practicewear</a>
+		<a class="dropdown-item" href="/repairs">Repairs</a>
+		<a class="dropdown-item" href="/alterations">Alterations</a>
+		<a class="dropdown-item" href="/order">Order</a>
 	      </div>
 	    </li>
 	    <!-- <a class="nav-item nav-link" id="nav-blog" href="#">Blog</a> -->
