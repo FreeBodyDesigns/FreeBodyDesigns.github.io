@@ -39,8 +39,7 @@ img {
   height:100%;
 }
 
-.carousel-caption-backed
-{
+.carousel-caption-backed {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -51,4 +50,16 @@ img {
     color: #fff;
     text-align: center;
     background: rgba(0,0,0,0.4);
+}
+
+.shop-item-header {
+    padding: 5px;
+}
+
+.shop-item-name {
+    font-weight: bold;
+}
+
+.shop-item-description {
+    padding: 5px;
 }

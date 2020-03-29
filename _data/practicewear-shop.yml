@@ -1,0 +1,41 @@
+# practicewear shop items
+- name: Sample practice dress
+  description: Sample text about practice dress. Dresses come in all sizes!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 2
+  description: Sample text about practice dress. Dresses come in all shapes and sizes!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 3
+  description: Sample text about practice dress. Dresses come in all shapes and sizes, all very comfortable!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 4
+  description: Sample text about practice dress. Dresses come in all shapes and sizes, all very comfortable! Order below.
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 5
+  description: Sample text about practice dress. Dresses come in all shapes and sizes, all very comfortable! More text here, just to make it a many-line description.
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 6
+  description: Sample text about practice dress. Dresses come in all sizes!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 7
+  description: Sample text about practice dress. Dresses come in all shapes and sizes!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
+- name: Sample practice dress 8
+  description: Sample text about practice dress. Dresses come in all shapes and sizes!
+  price: "200.00"
+  button_id: NV5784KBL6YJ4
+  img_src: /images/insta-min.jpg
