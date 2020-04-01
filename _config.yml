@@ -1,3 +1,7 @@
 safe: true
 lsi: false
 encoding: utf-8
+collections:
+  shop_items:
+    output: true
+    permalink: /shop/:title
