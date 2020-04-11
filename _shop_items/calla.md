@@ -2,9 +2,9 @@
 layout: shop_item
 slug: calla
 name: Calla Latin Skirt
-description: Description TBD
+description: This fitted, asymmetrical Latin skirt has a slight hi-low hem and features a stylish side ruffle and tie.
 price: "200.00"
-shop_collection: dancewear
+shop_collection: Beautiful Basics
 button_id: NV5784KBL6YJ4
 imgs:
   - src: /images/shop/calla-latin-skirt-1.png

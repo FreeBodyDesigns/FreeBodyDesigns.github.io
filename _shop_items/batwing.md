@@ -2,9 +2,9 @@
 layout: shop_item
 slug: batwing
 name: Batwing Top
-description: Description TBD
+description: This modern, yet classy, batwing top features a 3/4 sleeve and metallic peony accent tie at the neck. The waistband at the hem keeps it looking perfect, whether it is tucked in or not.
 price: "200.00"
-shop_collection: dancewear
+shop_collection: "Limited: Classic Blues"
 button_id: NV5784KBL6YJ4
 imgs:
   - src: /images/shop/batwing-top-1.png

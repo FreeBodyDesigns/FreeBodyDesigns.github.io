@@ -2,9 +2,9 @@
 layout: shop_item
 slug: salvia
 name: Salvia High Neck Shirt
-description: Description TBD
+description: This fitted, sophisticated long-sleeve shirt features a high neck in the front and low V in the back.
 price: "200.00"
-shop_collection: dancewear
+shop_collection: Beautiful Basics
 button_id: NV5784KBL6YJ4
 imgs:
   - src: /images/shop/salvia-high-neck-shirt-1.png
