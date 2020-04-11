@@ -1,17 +1,87 @@
 ---
 layout: default
 ---
-{% include cart_button.html %}
-<img class="img-fluid rounded" src="{{ page.imgs[0].min_src }}"/>
-<div class="shop-item-header">
-  <div class="shop-item-name">{{ page.name }}</div>
-  <!-- <div class="shop-item-collection">{{ page.shop_collection | capitalize}}</div> -->
-  <div>${{ page.price }}</div>
+<div class="shop-breadcrumb"><a href="/shop">Shop</a> &gt; <a>{{ page.shop_collection | capitalize }}</a> &gt; {{ page.name }}</div>
+
+
+<div class="row">
+  <!-- Item image(s) -->
+  <div class="col-md-4">
+    <!-- Carousel -->
+    <div class="carousel-wrapper">
+      <div id="itemCarousel" class="carousel slide" data-wrap="true" data-interval="false">
+
+	<!-- Images -->
+	<div class="carousel-inner">
+	  {% for item in page.imgs %}
+          <div class="carousel-item{% if forloop.first %} active{% endif %}">
+	    <img class="img-fluid" src="{{ item.min_src }}">
+	  </div>
+	  {% endfor %}
+	</div>
+	<!-- End Images -->
+
+	<!-- Controls -->
+	<a class="carousel-control-prev" href="#itemCarousel" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#itemCarousel" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+	<!-- End Controls -->
+
+	<!-- Indicators -->
+	<ul class="carousel-indicators list-inline">
+	  {% for item in page.imgs %}
+	  <li class="list-inline-item{% if forloop.first %} active{% endif %}">
+            <a id="carousel-selector-{{ forloop.index0 }}" class="selected" data-slide-to="{{ forloop.index0 }}" data-target="#itemCarousel">
+              <img src="{{ item.min_src }}" class="img-fluid">
+            </a>
+          </li>
+	  {% endfor %}
+	</ul>
+	<!-- End Indicators -->
+      </div>
+    </div>
+    <!-- End Carousel -->
+  </div>
+  <!-- End item images -->
+
+  <!-- Details / sizing / shipping -->
+  <div class="col-md-8">
+    <div class="shop-item-header">
+      <div class="shop-item-name">{{ page.name }}</div>
+      <div>${{ page.price }}</div>
+    </div>
+    <p class="shop-item-description">{{ page.description }}</p>
+    <form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="{{ page.button_id }}">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+    {% include cart_button.html %}
+  </div>
+  <!-- End Details / sizing / shipping -->
 </div>
-<p class="shop-item-description">{{ page.description }}</p>
-<form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-  <input type="hidden" name="cmd" value="_s-xclick">
-  <input type="hidden" name="hosted_button_id" value="{{ page.button_id }}">
-  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+
+<script>
+    $(".carousel").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+	$(this).one("touchmove", function(event){
+            var xMove = event.originalEvent.touches[0].pageX;
+            if( Math.floor(xClick - xMove) > 5 ){
+		$(this).carousel('next');
+            }
+            else if( Math.floor(xClick - xMove) < -5 ){
+		$(this).carousel('prev');
+            }
+	});
+	$(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+	});
+    });
+</script>
