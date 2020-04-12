@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
-<div class="shop-breadcrumb"><a href="/shop">Shop</a> &gt; <a>{{ page.shop_collection }}</a> &gt; {{ page.name }}</div>
-
+<!-- Breadcrumb -->
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb shop-breadcrumb">
+    <li class="breadcrumb-item"><a href="/shop">Shop</a></li>
+    <li class="breadcrumb-item">{{ page.shop_collection }}</li>
+    <li class="breadcrumb-item active">{{ page.name }}</li>
+  </ol>
+</nav>
+<!-- End Breadcrumb -->
 
 <div class="row">
   <!-- Item image(s) -->
