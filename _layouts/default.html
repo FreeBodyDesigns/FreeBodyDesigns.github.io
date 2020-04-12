@@ -99,10 +99,10 @@
 
   <script>
     var pageUrl = "{{ page.url }}";
-    pageUrl = pageUrl.replace(/^\/+|\/+$/g, "");
+    pageUrl = pageUrl.replace(/^\/+|\/+$|\/.+/g, "");
     if (pageUrl.length === 0) pageUrl = "about";
     if (pageUrl === "practicewear" || pageUrl === "custom-costumes") pageUrl = "dance";
-    console.log($("#nav-" + pageUrl));
+
     $("#nav-" + pageUrl).addClass("active");
   </script>
 </html>
