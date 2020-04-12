@@ -8,7 +8,8 @@ title: Shop
 
 <br />
 
-{%- for item in site.shop_items %}
+{%- assign sorted_items = site.shop_items | sort:"sort_order" %}
+{%- for item in sorted_items %}
 {%- assign placement = forloop.index0 | modulo:3 %}
 {%- if placement == 0 %}
 <div class="row">

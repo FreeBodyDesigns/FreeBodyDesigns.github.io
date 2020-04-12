@@ -52,7 +52,7 @@ layout: default
   <!-- Details / sizing / shipping -->
   <div class="col-md-8">
     <div class="shop-item-header">
-      <div class="shop-item-name">{{ page.name }}</div>
+      <h3>{{ page.name }}</h3>
       <div>${{ page.price }}</div>
     </div>
     <p class="shop-item-description">{{ page.description }}</p>
@@ -64,6 +64,17 @@ layout: default
     </form>
 
     {% include cart_button.html %}
+
+    <div class="shop-item-sizing">
+      <h3>Sizing</h3>
+      {{ page.sizing }}
+    </div>
+
+    <div class="shop-item-shipping">
+      <h3>Production and Shipping</h3>
+      {% include production_shipping.html %}
+    </div>
+
   </div>
   <!-- End Details / sizing / shipping -->
 </div>
