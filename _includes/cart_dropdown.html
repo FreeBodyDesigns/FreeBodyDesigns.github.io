@@ -1,0 +1,15 @@
+<tr>
+  <td>
+    <input type="hidden" name="{{ include.name }}" value="{{ include.value }}">{{ include.value | capitalize }}
+  </td>
+</tr>
+<tr>
+  <td>
+    <select name="{{ include.name }}">
+      {%- assign split_options = include.options | split:"," %}
+      {%- for value in split_options  %}
+      <option value="{{ value }}">{{ value }} </option>
+      {%- endfor %}
+    </select>
+  </td>
+</tr>
