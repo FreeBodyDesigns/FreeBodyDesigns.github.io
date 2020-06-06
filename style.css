@@ -34,8 +34,25 @@ img {
     text-align: right
 }
 
+/* Main shop page */
+.shop-item-header {
+    font-weight: bold;
+    color: #404040;
+    text-decoration: none;
+}
+
+.shop-item-description {
+    padding: 5px;
+    color: #808080;
+}
+
+/* Shop item pages (individual) */
 .shop-breadcrumb {
     background-color: #f5f5f5;
+}
+
+.shop-item-pricing {
+    padding: 10px 20px 10px 5px;
 }
 
 .carousel-item .img-fluid {
@@ -74,18 +91,6 @@ img {
 
 #itemCarousel .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ccc' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.shop-item-pricing {
-    padding: 10px 20px 10px 5px;
-}
-
-.shop-item-name {
-    font-weight: bold;
-}
-
-.shop-item-description {
-    padding: 5px;
 }
 
 .card-header button[aria-expanded=true] i {
