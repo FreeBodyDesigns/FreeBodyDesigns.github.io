@@ -8,6 +8,9 @@ price: "200.00"
 shop_collection: "Limited: Classic Blues"
 sort_order: -2
 button_id: NV5784KBL6YJ4
+selections:
+  - name: on0
+    dropdown: cart_dropdown_standard_size.html
 imgs:
   - src: /images/shop/blue-latin-skirt-1.png
     min_src: /images/shop/min/blue-latin-skirt-1-min.png

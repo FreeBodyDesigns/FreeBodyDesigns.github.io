@@ -8,6 +8,9 @@ price: "200.00"
 shop_collection: Beautiful Basics
 sort_order: 3
 button_id: NV5784KBL6YJ4
+selections:
+  - name: on1
+    dropdown: cart_dropdown_standard_size.html
 imgs:
   - src: /images/shop/salvia-high-neck-shirt-1.png
     min_src: /images/shop/min/salvia-high-neck-shirt-1-min.png
