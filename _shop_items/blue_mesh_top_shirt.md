@@ -7,7 +7,7 @@ sizing: "This classy piece is made of a super stretchy fabric on the bottom, wit
 price: "200.00"
 shop_collection: "Limited: Classic Blues"
 sort_order: -1
-button_id: NV5784KBL6YJ4
+button_id: NEGN3UJW8P6ZU
 selections:
   - dropdown: cart_dropdown_standard_size.html
 imgs:

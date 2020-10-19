@@ -7,7 +7,7 @@ sizing: "Each pair of pants is completely custom made according to your measurem
 price: "200.00"
 shop_collection: Beautiful Basics
 sort_order: 6
-button_id: NV5784KBL6YJ4
+button_id: RYDN486ZTE5J8
 selections:
   - dropdown: cart_dropdown_waist.html
   - dropdown: cart_dropdown_hips.html
