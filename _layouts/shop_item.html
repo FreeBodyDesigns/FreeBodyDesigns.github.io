@@ -61,29 +61,29 @@ layout: default
   <div class="col-md-8 shop-item-details">
     <h3>{{ page.name }}</h3>
     <!-- Price and Cart -->
-    <div class="shop-item-pricing row">
-      <div class="col-4 col-lg-6 col-xl-8">
-	<div>${{ page.price }}</div>
-      </div>
+    <div class="shop-item-pricing">
+      ${{ page.price }}
 
-      <div class="col-4 col-lg-3 col-xl-2">
-	<form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-	  <input type="hidden" name="cmd" value="_s-xclick">
-	  <input type="hidden" name="hosted_button_id" value="{{ page.button_id }}">
-	  <table>
-	    {%- for dropdown in page.selections %}
-	    {% include {{ dropdown.dropdown }} name=dropdown.name %}
-	    {%- endfor %}
-	  </table>
-	  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-	  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-	</form>
-      </div>
-      <div class="col-4 col-lg-3 col-xl-2">
-	{% include cart_button.html %}
-      </div>
+      <br /><br /><!-- TODO: Change to use padding -->
+
+      <form  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="hosted_button_id" value="{{ page.button_id }}">
+	<div class="row">
+	  {%- for dropdown in page.selections %}
+	  {% include {{ dropdown.dropdown }} name=dropdown.name %}
+	  {%- endfor %}
+	</div>
+      </form>
+
+      <br />
+
+      {% include cart_button.html %}
+
     </div>
-
+    
     <div class="accordion" id="shop-details">
       <!-- Details -->
       <div class="card">
