@@ -9,8 +9,7 @@ shop_collection: "Limited: Classic Blues"
 sort_order: -3
 button_id: NV5784KBL6YJ4
 selections:
-  - name: on0
-    dropdown: cart_dropdown_standard_loose.html
+  - dropdown: cart_dropdown_standard_loose.html
 imgs:
   - src: /images/shop/batwing-top-1.png
     min_src: /images/shop/min/batwing-top-1-min.png

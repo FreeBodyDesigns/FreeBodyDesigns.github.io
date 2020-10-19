@@ -9,10 +9,8 @@ shop_collection: Beautiful Basics
 sort_order: 2
 button_id: NV5784KBL6YJ4
 selections:
-  - name: on1
-    dropdown: cart_dropdown_standard_size.html
-  - name: on2
-    dropdown: cart_dropdown_skirt_length.html
+  - dropdown: cart_dropdown_standard_size.html
+  - dropdown: cart_dropdown_skirt_length.html
 imgs:
   - src: /images/shop/moonflower-skirt.png
     min_src: /images/shop/min/moonflower-skirt-min.png

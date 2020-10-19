@@ -9,12 +9,9 @@ shop_collection: Beautiful Basics
 sort_order: 5
 button_id: NV5784KBL6YJ4
 selections:
-  - name: on0
-    dropdown: cart_dropdown_waist.html
-  - name: on1
-    dropdown: cart_dropdown_hips.html
-  - name: on2
-    dropdown: cart_dropdown_inseam.html
+  - dropdown: cart_dropdown_waist.html
+  - dropdown: cart_dropdown_hips.html
+  - dropdown: cart_dropdown_inseam.html
 imgs:
   - src: /images/shop/linnaea-high-waisted-pants.png
     min_src: /images/shop/min/linnaea-high-waisted-pants-min.png

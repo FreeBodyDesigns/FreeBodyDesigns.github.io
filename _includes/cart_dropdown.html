@@ -1,7 +1,7 @@
-<div class="col">
-  <input type="hidden" name="{{ include.name }}" value="{{ include.value }}">
+<div class="col-3">
+  <input type="hidden" name="on{{ include.name }}" value="{{ include.value }}">
   {{ include.value | capitalize }}<br />
-  <select name="{{ include.name }}">
+  <select name="os{{ include.name }}">
     {%- assign split_options = include.options | split:"," %}
     {%- for value in split_options  %}
     <option value="{{ value }}">{{ value }} </option>
